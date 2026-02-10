@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Amazing Decora</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0f291e',
+                        'brand-green': '#1b4d3e',
+                        'brand-earth': '#8c6b4a',
+                        'brand-light': '#f4f1ea',
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-light text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 bg-brand-dark text-white shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-serif font-bold tracking-wide flex items-center gap-2">
+                <span class="text-brand-earth">Amazing</span>Decora
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="hover:text-brand-earth transition-colors font-medium">Home</a>
+                <a href="products.html" class="hover:text-brand-earth transition-colors font-medium">Products</a>
+                <a href="about.html" class="hover:text-brand-earth transition-colors font-medium">About Us</a>
+                <a href="contact.html" class="text-brand-earth font-bold border-b-2 border-brand-earth">Contact</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-brand-dark shadow-xl py-4 flex-col items-center gap-4 border-t border-white/10">
+            <a href="index.html" class="hover:text-brand-earth py-2 w-full text-center">Home</a>
+            <a href="products.html" class="hover:text-brand-earth py-2 w-full text-center">Products</a>
+            <a href="about.html" class="hover:text-brand-earth py-2 w-full text-center">About Us</a>
+            <a href="contact.html" class="text-brand-earth font-bold py-2 w-full text-center">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16 px-6 bg-brand-dark text-white text-center">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Get in Touch</h1>
+        <p class="text-gray-300 max-w-2xl mx-auto text-lg">We’d love to hear from you. Send us a message below.</p>
+    </header>
+
+    <!-- Contact Form Section -->
+    <main class="flex-grow py-16 px-6 lg:px-12">
+        <div
+            class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 bg-white rounded-3xl overflow-hidden shadow-2xl">
+
+            <!-- Contact Info (Left Side) -->
+            <div class="bg-brand-green p-10 text-white flex flex-col justify-center">
+                <h2 class="text-3xl font-serif font-bold mb-8">Contact Information</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Email</h3>
+                            <p class="text-gray-300">amazingdecora100@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Phone</h3>
+                            <p class="text-gray-300">+94 77 045 4112</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Office</h3>
+                            <p class="text-gray-300">No 475, Kainaka,<br>Kaikawala, Matale</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <p class="text-sm text-gray-400 italic">"Nature does not hurry, yet everything is accomplished."</p>
+                </div>
+            </div>
+
+            <!-- Form (Right Side) -->
+            <div class="p-10">
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First
+                                Name</label>
+                            <input type="text" id="first-name" name="first-name"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-all"
+                                placeholder="John">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last
+                                Name</label>
+                            <input type="text" id="last-name" name="last-name"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-all"
+                                placeholder="Doe">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-all"
+                            placeholder="john@example.com">
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                        <select id="subject" name="subject"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-all bg-white">
+                            <option>Product Inquiry</option>
+                            <option>Wholesale Order</option>
+                            <option>General Question</option>
+                            <option>Partnership</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-all"
+                            placeholder="How can we help you?"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-brand-earth hover:bg-amber-700 text-white font-bold py-4 rounded-lg transition-all transform hover:-translate-y-1 shadow-md">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-green text-white pt-12 pb-8 px-6 lg:px-12 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="font-serif font-bold text-xl">Amazing Decora</span>
+            </div>
+            <div class="text-sm text-gray-300">
+                &copy; 2026 Amazing Decora. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

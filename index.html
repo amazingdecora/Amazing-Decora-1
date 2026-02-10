@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Decora | Premium Coconut Plant Supports</title>
+    <meta name="description"
+        content="Handcrafted coconut pole supports, coir pots, and orchid structures for your indoor garden. Sustainable, durable, and beautiful.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0f291e', // Deep forest green
+                        'brand-green': '#1b4d3e', // Primary green
+                        'brand-earth': '#8c6b4a', // Coconut brown
+                        'brand-light': '#f4f1ea', // Off-white/cream
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(15, 41, 30, 0.4), rgba(15, 41, 30, 0.7));
+        }
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-brand-light text-gray-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 bg-transparent text-white">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-serif font-bold tracking-wide flex items-center gap-2">
+                <span class="text-brand-earth">Amazing</span>Decora
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="hover:text-brand-earth transition-colors font-medium">Home</a>
+                <a href="products.html" class="hover:text-brand-earth transition-colors font-medium">Products</a>
+                <a href="about.html" class="hover:text-brand-earth transition-colors font-medium">About Us</a>
+                <a href="contact.html"
+                    class="px-5 py-2 bg-brand-earth hover:bg-amber-700 rounded-full text-white transition-all transform hover:scale-105 font-medium">Contact</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-brand-dark shadow-xl py-4 flex-col items-center gap-4 border-t border-white/10">
+            <a href="index.html" class="hover:text-brand-earth py-2 w-full text-center">Home</a>
+            <a href="products.html" class="hover:text-brand-earth py-2 w-full text-center">Products</a>
+            <a href="about.html" class="hover:text-brand-earth py-2 w-full text-center">About Us</a>
+            <a href="contact.html" class="text-brand-earth font-bold py-2 w-full text-center">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="hero_monstera.png" alt="Monstera on coconut pole" class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto" style="animation: fadeIn 1s ease-out;">
+            <p
+                class="text-brand-earth uppercase tracking-widest text-sm md:text-base font-bold mb-4 bg-black/20 inline-block px-4 py-1 rounded-full backdrop-blur-sm">
+                Premium Plant Supports</p>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 text-shadow leading-tight">
+                Support Your Plants<br> <span class="text-brand-earth italic">Naturally</span>
+            </h1>
+            <p class="text-gray-100 text-lg md:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
+                Handcrafted coconut coir poles and sustainable orchid structures designed to help your indoor garden
+                thrive with style.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="products.html"
+                    class="px-8 py-3 bg-brand-earth hover:bg-amber-700 text-white rounded-full font-medium transition-all transform hover:-translate-y-1 shadow-lg shadow-brand-earth/30">
+                    Explore Collection
+                </a>
+                <a href="about.html"
+                    class="px-8 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white rounded-full font-medium transition-all">
+                    Our Story
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-20 px-6 lg:px-12 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="text-center p-6 group hover:bg-brand-light rounded-2xl transition-colors duration-300">
+                    <div
+                        class="w-16 h-16 mx-auto bg-brand-green/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brand-dark mb-3">100% Eco-Friendly</h3>
+                    <p class="text-gray-600">Made from sustainable coconut husks and natural wood. Completely
+                        biodegradable and safe for your plants.</p>
+                </div>
+                <div class="text-center p-6 group hover:bg-brand-light rounded-2xl transition-colors duration-300">
+                    <div
+                        class="w-16 h-16 mx-auto bg-brand-green/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brand-dark mb-3">Promotes Growth</h3>
+                    <p class="text-gray-600">Coir texture encourages aerial root attachment, mimicking the natural
+                        rainforest environment for faster growth.</p>
+                </div>
+                <div class="text-center p-6 group hover:bg-brand-light rounded-2xl transition-colors duration-300">
+                    <div
+                        class="w-16 h-16 mx-auto bg-brand-green/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-brand-dark mb-3">Handcrafted Quality</h3>
+                    <p class="text-gray-600">Each pole and pot is carefully crafted by skilled artisans to ensure
+                        durability and aesthetic appeal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="py-20 px-6 lg:px-12 bg-brand-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-brand-green font-bold tracking-wider text-sm uppercase">Our Collection</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-dark mt-2">Bestselling Favorites</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-80 overflow-hidden bg-gray-200">
+                        <img src="images/pole.jpg" alt="Coconut Pole"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <!-- Placeholder until local generation succeeds -->
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-dark mb-2">Coconut Grow Poles</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Ideal for Monsteras and Philodendrons to climb upwards.
+                        </p>
+                        <a href="products.html"
+                            class="inline-flex items-center text-brand-earth font-bold hover:underline">
+                            View Details <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-80 overflow-hidden bg-gray-200">
+                        <img src="images/pot.jpg" alt="Coir Pots"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-dark mb-2">Coir Pots</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Biodegradable pots that allow roots to grow through.</p>
+                        <a href="products.html"
+                            class="inline-flex items-center text-brand-earth font-bold hover:underline">
+                            View Details <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-80 overflow-hidden bg-gray-200">
+                        <img src="images/orchid.jpg" alt="Orchid Support"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-brand-dark mb-2">Hanging Support for Orchid Plants</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Wodden hanging structures providing perfect aeration.</p>
+                        <a href="products.html"
+                            class="inline-flex items-center text-brand-earth font-bold hover:underline">
+                            View Details <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="products.html"
+                    class="inline-block border-2 border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white px-8 py-3 rounded-full font-bold transition-all">
+                    See All Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-brand-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pattern-dots"
+            style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Ready to Transform Your Garden?</h2>
+            <p class="text-gray-300 text-lg mb-10">Join thousands of plant lovers who choose Amazing Decora for
+                sustainable, beautiful plant supports.</p>
+            <a href="contact.html"
+                class="inline-block bg-brand-earth hover:bg-amber-700 text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1">
+                Contact Us Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-green text-white pt-16 pb-8 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div>
+                <a href="#" class="text-2xl font-serif font-bold tracking-wide flex items-center gap-2 mb-6">
+                    <span class="text-brand-earth">Amazing</span>Decora
+                </a>
+                <p class="text-gray-300">Helping your plants reach new heights with premium, eco-friendly supports.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6 text-brand-earth">Products</h4>
+                <ul class="space-y-3 text-gray-300">
+                    <li><a href="products.html" class="hover:text-white transition-colors">Coconut Poles</a></li>
+                    <li><a href="products.html" class="hover:text-white transition-colors">Coir Pots</a></li>
+                    <li><a href="products.html" class="hover:text-white transition-colors">Orchid Supports</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6 text-brand-earth">Company</h4>
+                <ul class="space-y-3 text-gray-300">
+                    <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6 text-brand-earth">Connect</h4>
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-earth transition-colors">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-brand-earth transition-colors">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/20 pt-8 text-center text-gray-400 text-sm">
+            &copy; 2026 Amazing Decora. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

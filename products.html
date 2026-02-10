@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Amazing Decora</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#0f291e',
+                        'brand-green': '#1b4d3e',
+                        'brand-earth': '#8c6b4a',
+                        'brand-light': '#f4f1ea',
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-light text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 bg-brand-dark text-white shadow-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-serif font-bold tracking-wide flex items-center gap-2">
+                <span class="text-brand-earth">Amazing</span>Decora
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="hover:text-brand-earth transition-colors font-medium">Home</a>
+                <a href="products.html" class="text-brand-earth font-medium border-b-2 border-brand-earth">Products</a>
+                <a href="about.html" class="hover:text-brand-earth transition-colors font-medium">About Us</a>
+                <a href="contact.html"
+                    class="px-5 py-2 bg-brand-earth hover:bg-amber-700 rounded-full text-white transition-all transform hover:scale-105 font-medium">Contact</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none">
+                &#9776;
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-brand-dark shadow-xl py-4 flex-col items-center gap-4 border-t border-white/10">
+            <a href="index.html" class="hover:text-brand-earth py-2 w-full text-center">Home</a>
+            <a href="products.html" class="text-brand-earth font-bold py-2 w-full text-center">Products</a>
+            <a href="about.html" class="hover:text-brand-earth py-2 w-full text-center">About Us</a>
+            <a href="contact.html" class="text-brand-earth font-bold py-2 w-full text-center">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-12 px-6 bg-brand-dark text-white text-center">
+        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Our Collection</h1>
+        <p class="text-gray-300 max-w-2xl mx-auto">Discover our range of sustainable gardening solutions, handcrafted to
+            support your plants and beautify your space.</p>
+    </header>
+
+    <!-- Products Grid -->
+    <main class="flex-grow py-16 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto space-y-24">
+
+            <!-- Category 1: Poles -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <span class="text-brand-earth font-bold tracking-widest text-sm uppercase mb-2 block">Best
+                        Seller</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-6">Coconut Coir Grow Poles
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Our signature grow poles are made from high-quality, sterilized coconut fiber wrapped around a
+                        durable core. These poles mimic the texture of damp tree bark, providing the perfect surface for
+                        aerial roots to grip.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-gray-700"><svg class="w-5 h-5 text-brand-green"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Available in 46cm, 61cm, 76cm, 91cm, 107cm, 122cm heights</li>
+
+                        <li class="flex items-center gap-3 text-gray-700"><svg class="w-5 h-5 text-brand-green"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Stackable design for extending height</li>
+                        <li class="flex items-center gap-3 text-gray-700"><svg class="w-5 h-5 text-brand-green"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Retains moisture for humidity-loving plants</li>
+                    </ul>
+                    <a href="https://wa.me/94770454112"
+                        class="px-8 py-3 bg-brand-green hover:bg-brand-dark text-white rounded-full font-medium transition-colors shadow-lg">Inquire
+                        via WhatsApp</a>
+                </div>
+                <div class="order-1 md:order-2 h-96 bg-gray-200 rounded-3xl overflow-hidden shadow-xl">
+                    <img src="images/pole.jpg" alt="Coconut Pole Detail" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Category 2: Pots -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="md:order-1 h-96 bg-gray-200 rounded-3xl overflow-hidden shadow-xl">
+                    <img src="images/pot.jpg" alt="Coir Pots Usage" class="w-full h-full object-cover">
+                </div>
+                <div class="md:order-2">
+                    <span
+                        class="text-brand-earth font-bold tracking-widest text-sm uppercase mb-2 block">Eco-Choice</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-6">Coir Pots
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Say goodbye to plastic shock. Our coir pots are designed to be planted directly into the ground.
+                        The roots naturally penetrate through the pot walls, preventing root circling and transplant
+                        shock.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-gray-700"><svg class="w-5 h-5 text-brand-green"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> 100% Biodegradable & Compostable</li>
+                        <li class="flex items-center gap-3 text-gray-700"><svg class="w-5 h-5 text-brand-green"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Excellent aeration for root health</li>
+                        <li class="flex items-center gap-3 text-gray-700"><svg class="w-5 h-5 text-brand-green"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Adds organic matter to soil as it decomposes</li>
+                    </ul>
+                    <a href="https://wa.me/94770454112"
+                        class="px-8 py-3 bg-brand-green hover:bg-brand-dark text-white rounded-full font-medium transition-colors shadow-lg">Inquire
+                        via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Category 3: Orchid Structures -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <span
+                        class="text-brand-earth font-bold tracking-widest text-sm uppercase mb-2 block">Specialty</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-dark mb-6">Hanging Support for
+                        Orchid Plants</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Elegant wooden structures specifically designed for epiphytic plants like Orchids and Ferns. The
+                        open slat design ensures maximum airflow to the root system, preventing rot and simulating their
+                        natural habitat.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-gray-700"><svg class="w-5 h-5 text-brand-green"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Rot-resistant treated wood</li>
+                        <li class="flex items-center gap-3 text-gray-700"><svg class="w-5 h-5 text-brand-green"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Includes durable hanging chains</li>
+                        <li class="flex items-center gap-3 text-gray-700"><svg class="w-5 h-5 text-brand-green"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Beautiful rustic aesthetic</li>
+                    </ul>
+                    <a href="https://wa.me/94770454112"
+                        class="px-8 py-3 bg-brand-green hover:bg-brand-dark text-white rounded-full font-medium transition-colors shadow-lg">Inquire
+                        via WhatsApp</a>
+                </div>
+                <div class="order-1 md:order-2 h-96 bg-gray-200 rounded-3xl overflow-hidden shadow-xl">
+                    <img src="images/orchid.jpg" alt="Orchid Support" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-green text-white pt-12 pb-8 px-6 lg:px-12 mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="font-serif font-bold text-xl">Amazing Decora</span>
+            </div>
+            <div class="text-sm text-gray-300">
+                &copy; 2026 Amazing Decora. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
